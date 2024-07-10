@@ -1,0 +1,59 @@
+Q1. What is computer vision and what are its main goals?
+
+    Computer vision is a field of artificial intelligence that enables machines to interpret and understand visual information from the world, such as images and videos. The main
+    goals of computer vision include:
+    
+    Image classification: Identifying the category of objects within an image.
+    Object detection: Locating and classifying multiple objects within an image.
+    Image segmentation: Dividing an image into meaningful regions or segments.
+    Object tracking: Following the movement of objects across frames in a video.
+    3D reconstruction: Creating a 3D model from multiple 2D images.
+    Scene understanding: Interpreting complex scenes to extract meaningful information.
+    Computer vision has applications in various fields, including autonomous vehicles, healthcare, surveillance, and robotics.
+
+Q2. What is the difference between supervised and unsupervised learning in computer vision?
+
+    Supervised and unsupervised learning are two types of machine learning approaches used in computer vision:
+    
+    Supervised learning: Involves training a model on a labeled dataset, where each input image is paired with a corresponding label or annotation. The model learns to map
+    inputs to outputs based on the provided examples. Supervised learning is used for tasks like image classification, object detection, and semantic segmentation. Examples
+    include Convolutional Neural Networks (CNNs) and Support Vector Machines (SVMs).
+    Unsupervised learning: Involves training a model on an unlabeled dataset, where the model must discover patterns and structures within the data without explicit labels. 
+    Unsupervised learning is used for tasks like clustering, dimensionality reduction, and anomaly detection. Examples include k-means clustering and autoencoders.
+    Both approaches have their strengths and are chosen based on the availability of labeled data and the specific problem at hand.
+
+    
+Q3. Explain the concept of Convolutional Neural Networks (CNNs).
+
+    Convolutional Neural Networks (CNNs) are a class of deep learning models specifically designed for processing and analyzing visual data. They consist of multiple layers, including convolutional layers, pooling layers, and fully connected layers:
+    
+    Convolutional layers: Apply convolutional filters (kernels) to the input image, capturing spatial hierarchies and local patterns. These layers learn features like edges,
+    textures, and shapes.
+    Pooling layers: Reduce the spatial dimensions of the feature maps, retaining important information while reducing computational complexity. Common pooling methods include 
+    max pooling and average pooling.
+    Fully connected layers: Flatten the feature maps and connect every neuron to the previous layer, performing high-level reasoning and classification.
+    CNNs are widely used in computer vision tasks such as image classification, object detection, and semantic segmentation due to their ability to automatically learn and
+    extract relevant features from images.
+    
+Q4. What is the purpose of transfer learning in computer vision?
+
+    Transfer learning involves using a pre-trained model on a large dataset and fine-tuning it on a smaller, task-specific dataset. The purpose is to leverage the knowledge 
+    learned by the pre-trained model to improve performance and reduce training time for the new task. Transfer learning is particularly useful in computer vision due to the 
+    high computational cost and large datasets required to train deep learning models from scratch.
+    Common approaches to transfer learning include:
+    
+    Fine-tuning: Adjusting the weights of the pre-trained model on the new dataset.
+    Feature extraction: Using the pre-trained model as a fixed feature extractor and training a new classifier on top of the extracted features.
+    Transfer learning is effective for tasks like image classification, object detection, and semantic segmentation.
+
+Q5. Describe the YOLO (You Only Look Once) algorithm for object detection.
+
+    YOLO (You Only Look Once) is a real-time object detection algorithm that treats object detection as a single regression problem, directly predicting bounding boxes and class 
+    probabilities from the input image. YOLO divides the image into a grid and assigns each grid cell to detect objects if the object's center falls within the cell. For each 
+    grid cell, YOLO predicts:
+    
+    Bounding box coordinates (x, y, width, height)
+    Confidence score indicating the presence of an object
+    Class probabilities for each object class
+    YOLO's architecture is based on a single convolutional neural network, making it extremely fast compared to traditional methods like R-CNN and Faster R-CNN. YOLO is widely 
+    used in applications requiring real-time object detection, such as autonomous driving and surveillance.
